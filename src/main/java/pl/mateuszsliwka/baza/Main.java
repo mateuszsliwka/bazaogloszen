@@ -25,7 +25,7 @@ public class Main {
         AddsDAO adds = new AddsDAO();
 //     System.out.println(Arrays.toString(adds.alladds().toArray()));
 //            adds.insert("Honda", "CRV", "2200", "Petrol", "2010","220322" , "ABS,ESP, kontrola trakcji", "87600" , 0);
-        System.out.println(Arrays.toString(adds.alladds().toArray()));
+        System.out.println(Arrays.toString(adds.alladds().toArray())+"ms");
         adds.close();
 
     }
