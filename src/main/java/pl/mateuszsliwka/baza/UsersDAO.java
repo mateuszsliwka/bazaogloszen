@@ -57,6 +57,13 @@ public class UsersDAO {
         System.out.println("User '"+login+"' doesn't exist");
     }
     }
+    public List showadds(int ID)
+    {
+        
+        List result = em.createQuery("SELECT add FROM Adds add where OwnerID = :value1").setParameter("value1", ID).getResultList();
+        return result;
+       
+    }
     public void close()
     {
         em.close();
